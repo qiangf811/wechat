@@ -1,6 +1,6 @@
 # wechat
 
-> My epic Nuxt.js project
+> Nuxt.js编写的微信公众号，包括服务端和web端，项目启动前请按照mongodb,并更改config.js文件中url
 
 ## Build Setup
 
