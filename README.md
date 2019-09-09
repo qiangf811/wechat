@@ -1,6 +1,6 @@
 # wechat
 
-> Nuxt.js编写的微信公众号，包括服务端和web端，项目启动前请按照mongodb,并更改config.js文件中url
+> Nuxt.js编写的微信公众号，包括服务端和web端，项目启动前请安装MongoDB,并更改config.js文件中url(MongoDB连接地址)
 
 ## Build Setup
 
