@@ -6,12 +6,13 @@ const { pushImgMessage } = require('./push-message')
 const { fethSignature } = require('./wechat-jssdk')
 const { wechatAuth } = require('./wechat-auth')
 const { APP_ID } = require('./constant')
+
 const initwechat = async app => {
   try {
     app.appId = APP_ID
     app.wechatToken = await fetchAccessToken()
     app.jsapi_ticket = await fetchJsapiTicket(app.wechatToken)
-    createMenu(app)
+    createMenu(app.wechatToken)
     setInterval(async () => {
       app.wechatToken = await fetchAccessToken()
       app.jsapi_ticket = await fetchJsapiTicket(app.wechatToken)

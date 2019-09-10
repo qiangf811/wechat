@@ -1,15 +1,16 @@
 const TOKEN = 'qiangfeng'
 const APP_ID = 'wxfeab4479b74284bb'
 const APP_SECRET = 'b561a4b0aa99fc6571df75dd93b627ad'
-const WECHAT_APP_URL = 'http://aw3e5i.natappfree.cc'
-const URL_PREFIX = 'https://api.weixin.qq.com/cgi-bin'
-const ACCESS_TOKEN_URL = `${URL_PREFIX}/token?grant_type=client_credential&appid=${APP_ID}&secret=${APP_SECRET}`
+const WECHAT_APP_URL = 'http://udrfnb.natappfree.cc'
+const WECHAT_API_URL_PREFIX = 'https://api.weixin.qq.com/cgi-bin'
+const ACCESS_TOKEN_URL = `${WECHAT_API_URL_PREFIX}/token?grant_type=client_credential&appid=${APP_ID}&secret=${APP_SECRET}`
 
 const API_URL = {
-  GET_USER_INFO: (token, openId) => `${URL_PREFIX}/user/info?access_token=${token}&openid=${openId}&lang=zh_CN`,
-  IMG_UPLOAD: token => `${URL_PREFIX}/media/uploadimg?access_token=${token}`,
-  SEND_ALL_MESSAGE: token => `${URL_PREFIX}/message/mass/sendall?access_token=${token}`,
-  JS_API_TICKET: token => `${URL_PREFIX}/ticket/getticket?access_token=${token}&type=jsapi`,
+  CREATE_MENU: token => `${WECHAT_API_URL_PREFIX}/menu/create?access_token=${token}`,
+  GET_USER_INFO: (token, openId) => `${WECHAT_API_URL_PREFIX}/user/info?access_token=${token}&openid=${openId}&lang=zh_CN`,
+  IMG_UPLOAD: token => `${WECHAT_API_URL_PREFIX}/media/uploadimg?access_token=${token}`,
+  SEND_ALL_MESSAGE: token => `${WECHAT_API_URL_PREFIX}/message/mass/sendall?access_token=${token}`,
+  JS_API_TICKET: token => `${WECHAT_API_URL_PREFIX}/ticket/getticket?access_token=${token}&type=jsapi`,
   WEB_ACCESS_TOKEN_URL: code => `https://api.weixin.qq.com/sns/oauth2/access_token?appid=${APP_ID}&secret=${APP_SECRET}&code=${code}&grant_type=authorization_code`
 }
 const WECHAT_MENU = {
@@ -49,7 +50,7 @@ module.exports = {
   TOKEN,
   APP_ID,
   APP_SECRET,
-  URL_PREFIX,
+  WECHAT_API_URL_PREFIX,
   ACCESS_TOKEN_URL,
   WECHAT_MENU,
   API_URL,

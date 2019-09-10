@@ -1,8 +1,8 @@
 const axios = require('axios')
-const { WECHAT_MENU, URL_PREFIX } = require('./constant')
-exports.createMenu = async (app) => {
+const { WECHAT_MENU, API_URL } = require('./constant')
+exports.createMenu = async (token) => {
   try {
-    axios.post(URL_PREFIX + `/menu/create?access_token=${app.wechatToken}`, WECHAT_MENU)
+    axios.post(API_URL.CREATE_MENU(token), WECHAT_MENU)
   } catch (error) {
 
   }
