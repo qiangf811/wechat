@@ -1,7 +1,7 @@
 const TOKEN = 'qiangfeng'
 const APP_ID = 'wxfeab4479b74284bb'
 const APP_SECRET = 'b561a4b0aa99fc6571df75dd93b627ad'
-const WECHAT_APP_URL = 'http://v3rgch.natappfree.cc'
+const WECHAT_APP_URL = 'http://843tgd.natappfree.cc'
 const WECHAT_API_URL_PREFIX = 'https://api.weixin.qq.com/cgi-bin'
 const ACCESS_TOKEN_URL = `${WECHAT_API_URL_PREFIX}/token?grant_type=client_credential&appid=${APP_ID}&secret=${APP_SECRET}`
 

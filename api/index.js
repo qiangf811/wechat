@@ -1,7 +1,7 @@
 
 const express = require('express')
 const wechat = require('./wechat')
-// require('../mongoose/mongodb').connection()
+require('../mongoose/mongodb').connection()
 const axios = require('axios')
 const app = express()
 const router = express.Router()
