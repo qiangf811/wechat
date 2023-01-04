@@ -23,7 +23,7 @@
     "express-session": "^1.16.2",
     "form-data": "^2.5.1",
     "mongoose": "^5.9.7",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.15.8",
     "sha1": "^1.1.1",
     "weixin-js-sdk": "^1.4.0-test",
     "weui": "^2.0.1",
